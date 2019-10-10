@@ -69,7 +69,7 @@
             <div el-row class="ssrwarp">
               <div el-col [span]="6" [xs]="12" class="ssrcol" *ngFor="let item of items">
                 <div class="onessr pdsx10">
-                  <div class="ssrname">{{item.name}}</div>
+                  <div class="ssrname">{{item.remarks}}</div>
                   <div>
                     <el-button size="mini" style="margin-right: 5px;" (click)="onSsClick(item)">
                       <span>SS</span>
@@ -93,7 +93,7 @@
 
             <div class="pd10 right">
               <div class="date">
-                最后更新时间：<span class="pink">08月28日 03点12分</span></div>
+                最后更新时间：<span class="pink"> {{items[0].addTime | date: 'MM月dd日 HH点mm分'}}</span></div>
 
               <el-button type="primary" size="mini" (click)="onCopyAllSsr()">
                 <span>复制所有SSR节点</span></el-button>
@@ -174,7 +174,7 @@
 </div>
 
 <div #card>
-  <el-dialog [title]="'ssr二维码'" [(visible)]="card.toggle">
+  <el-dialog [title]="'ssr二维码'" [(visible)]="card.toggle" width="300px">
     <ng-template #title>
       <span class="el-icon-warning"></span>
       <span>ssr二维码</span>

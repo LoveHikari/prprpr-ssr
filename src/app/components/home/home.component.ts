@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
    * @param item ssr
    */
   public onSsClick(item) {
-    const ssr = item.content;
+    const ssr = item.ss;
 
     if (this.clipboard.copyFromContent(ssr)) {
       this.native.presentAlert('成功复制一个SS节点，请注意它与SSR的区别！');
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
    * @param item ssr
    */
   public onSsrClick(item) {
-    const ssr = item.content;
+    const ssr = item.ssr;
 
     if (this.clipboard.copyFromContent(ssr)) {
       this.native.presentAlert('节点复制成功，请导入SSR客户端使用');
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
    * @param item ssr
    */
   public onShowQrCode(item) {
-    const ssr = item.content;
+    const ssr = item.ssr;
     this.myAngularxQrCode = ssr;
     this.card.nativeElement.toggle = true;
   }
@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
   public onCopyAllSsr() {
     let ssr = '';
     for (const item of this.items) {
-      ssr += item.content + ',';
+      ssr += item.ssr + ',';
     }
     if (this.clipboard.copyFromContent(ssr)) {
       this.native.presentAlert('成功复制一组节点，请批量导入SSR客户端使用！');

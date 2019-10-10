@@ -16,7 +16,7 @@ export class SsrApiService {
    */
   public getSsr() {
     return new Observable(observer => {
-      this.http.get(APP_SERVE_URL + 'api/ssr?type=freess').subscribe(req => {
+      this.http.get(APP_SERVE_URL + 'api/ssr?groups=freess').subscribe(req => {
         if (req.error === 200) {
           observer.next(req);
         }
