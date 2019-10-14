@@ -1,0 +1,472 @@
+#header {
+    min-height: 70px;
+    background: #fff
+}
+
+.topBar {
+    color: #dadada;
+    font-size: 12px
+}
+
+.logo {
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center
+}
+
+.logo h1 {
+    font-size: 20px
+}
+
+.side ol, .side ul {
+    line-height: 2em
+}
+
+.ssr {
+    padding: 10px
+}
+
+.ssrwrap {
+    padding-bottom: 0;
+    position: relative
+}
+
+.ssrNotice {
+    line-height: 1.5em;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee
+}
+
+.noticeContent {
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #eee
+}
+
+.onessr {
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 3px 2px #eaeaea;
+    box-shadow: 1px 1px 3px 2px #eaeaea;
+    border-radius: 3px;
+    background: #fff
+}
+
+.ssrname {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #49beb7
+}
+
+.hiddenWrap {
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 0;
+    overflow: hidden
+}
+
+.hiddenBlock {
+    height: 100px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0)), to(#fff));
+    background: linear-gradient(rgba(5, 5, 5, 0), #fff)
+}
+
+.hiddenButton {
+    height: 30px;
+    background: #fff;
+    text-align: center
+}
+
+.date {
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 10px
+}
+
+.error {
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 600;
+    color: #e84436;
+    border: 1px dashed #ff8484;
+    line-height: 1.8em
+}
+
+.demo-table-expand {
+    font-size: 0
+}
+
+.demo-table-expand label {
+    width: 90px;
+    color: #99a9bf
+}
+
+.demo-table-expand .el-form-item {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 50%
+}
+
+.ewm {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 10
+}
+
+.ewmimg {
+    max-width: 180px;
+    max-height: 180px;
+    text-align: center;
+    margin: 0 auto;
+    border: 5px solid #fff
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+li {
+    list-style: none
+}
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1250px;
+    overflow: hidden
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #3a3a3a;
+    background: #eee
+}
+
+a {
+    text-decoration: none;
+    color: #a72f2f
+}
+
+a:hover {
+    color: red
+}
+
+.font-small {
+    font-size: 12px
+}
+
+.border, .dt {
+    border-bottom: 1px solid #eee
+}
+
+.dt {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: 600;
+    color: #969696
+}
+
+.dt.noborder {
+    border: none;
+    margin-bottom: 5px
+}
+
+.box-list > div:not(:first-child) {
+    margin-top: 10px
+}
+
+@media (max-width: 768px) {
+    .mgtop10-phone {
+        margin-top: 10px
+    }
+}
+
+.left {
+    text-align: left
+}
+
+.float-right {
+    float: right
+}
+
+.float-left {
+    float: left
+}
+
+.rc, .round-corners {
+    border-radius: 2px
+}
+
+.clear {
+    clear: both
+}
+
+.center {
+    text-align: center
+}
+
+.right {
+    text-align: right
+}
+
+.line {
+    display: inline-block
+}
+
+.hidden {
+    display: none
+}
+
+.pd5 {
+    padding: 5px
+}
+
+.pdzy5 {
+    padding: 0 5px
+}
+
+.pdsx5 {
+    padding: 5px 0
+}
+
+.mg5 {
+    margin: 5px
+}
+
+.mgzy5 {
+    margin: 0 5px
+}
+
+.mgsx5 {
+    margin: 5px 0
+}
+
+.mgtop5 {
+    margin-top: 5px
+}
+
+.mgbottom5 {
+    margin-bottom: 5px
+}
+
+.pd10 {
+    padding: 10px
+}
+
+.pdzy10 {
+    padding: 0 10px
+}
+
+.pdsx10 {
+    padding: 10px 0
+}
+
+.mg10 {
+    margin: 10px
+}
+
+.mgzy10 {
+    margin: 0 10px
+}
+
+.mgsx10 {
+    margin: 10px 0
+}
+
+.mgtop10 {
+    margin-top: 10px
+}
+
+.mgbottom10 {
+    margin-bottom: 10px
+}
+
+.pd15 {
+    padding: 15px
+}
+
+.pdzy15 {
+    padding: 0 15px
+}
+
+.pdsx15 {
+    padding: 15px 0
+}
+
+.mg15 {
+    margin: 15px
+}
+
+.mgzy15 {
+    margin: 0 15px
+}
+
+.mgsx15 {
+    margin: 15px 0
+}
+
+.mgtop15 {
+    margin-top: 15px
+}
+
+.mgbottom15 {
+    margin-bottom: 15px
+}
+
+.pd20 {
+    padding: 20px
+}
+
+.pdzy20 {
+    padding: 0 20px
+}
+
+.pdsx20 {
+    padding: 20px 0
+}
+
+.mg20 {
+    margin: 20px
+}
+
+.mgzy20 {
+    margin: 0 20px
+}
+
+.mgsx20 {
+    margin: 20px 0
+}
+
+.mgtop20 {
+    margin-top: 20px
+}
+
+.mgbottom20 {
+    margin-bottom: 20px
+}
+
+.white {
+    color: #fff
+}
+
+.white-bg {
+    background: #fff
+}
+
+.black {
+    color: #3a3a3a
+}
+
+.black-bg {
+    background: #3a3a3a
+}
+
+.red {
+    color: #e84436
+}
+
+.red-bg {
+    background: #e84436
+}
+
+.gray {
+    color: #909090
+}
+
+.gray-bg {
+    background: #909090
+}
+
+.pink {
+    color: #ee7785
+}
+
+.pink-bg {
+    background: #ee7785
+}
+
+.blue {
+    color: #4285f4
+}
+
+.blue-bg {
+    background: #4285f4
+}
+
+.green {
+    color: #34a853
+}
+
+.green-bg {
+    background: #34a853
+}
+
+.yellow {
+    color: #fbbc05
+}
+
+.yellow-bg {
+    background: #fbbc05
+}
+
+.adWrap1 > div:not(:first-child) {
+    margin-top: 10px
+}
+
+.ad {
+    font-size: 0;
+    position: relative
+}
+
+.ad img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 0 1px #e0e0e0;
+    box-shadow: 0 0 0 1px #e0e0e0
+}
+
+.ad:hover :after {
+    content: "\8D5E\52A9\5546";
+    font-size: 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 10;
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    padding: 2px 4px;
+    border-radius: 2px
+}
+
+.shadow {
+    -webkit-box-shadow: 0 0 0 1px #e0e0e0;
+    box-shadow: 0 0 0 1px #e0e0e0
+}
+
+.dt {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.dt i {
+    position: absolute;
+    right: 0
+}
