@@ -1,19 +1,19 @@
 import Axios from 'axios';
 
 let ssrApi = {
-    getSsr: function (groups) {
+    getSsr: function (pageIndex, pageSize, groups = "") {
         const promise = new Promise(resolve => {
-            Axios.get('https://api.yayoo.tk/api/Ssr',
+            Axios.get('https://api.yayoo.tk/api/v1/Ssr',
                 {
-                    params: {groups: groups}
+                    params: {pageIndex, pageSize, groups}
                 }).then(req => {
-                resolve(req.data.data);
+                resolve(req.data);
             }).catch(err => {
                 throw err;
             });
         });
         return promise;
-    }
+    },
 
 };
 
