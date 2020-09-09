@@ -1,12 +1,9 @@
 import Axios from 'axios';
 
 let ssrApi = {
-    getSsr: function (pageIndex, pageSize, groups = "") {
+    getSsr: function () {
         const promise = new Promise(resolve => {
-            Axios.get('https://api.prprpr.ml/api/v1/Ssr',
-                {
-                    params: {pageIndex, pageSize, groups}
-                }).then(req => {
+            Axios.get('https://api.lncn.ml/api/v1/ssr/list').then(req => {
                 resolve(req.data);
             }).catch(err => {
                 throw err;

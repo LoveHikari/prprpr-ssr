@@ -16,7 +16,7 @@ export default {
             document.getElementsByClassName('ssrwrap')[0].children[0].style.maxHeight = 'none';
         });
 
-        ssrApi.getSsr(1,10000,'freess').then(req => {
+        ssrApi.getSsr().then(req => {
             this.ssrList = req.data;
         });
     },

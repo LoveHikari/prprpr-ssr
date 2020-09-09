@@ -147,14 +147,14 @@
                                             <div class="ssrname">{{item.remarks}}</div>
                                             <div>
                                                 <el-button size="mini" style="margin-right: 5px;"
-                                                           v-clipboard:copy="item.ss" v-clipboard:success="onSsCopy">
+                                                           v-clipboard:copy="item.url" v-clipboard:success="onSsCopy">
                                                     <!----><!----><span>SS</span>
                                                 </el-button>
                                                 <el-button-group>
-                                                    <el-button size="mini" @click="onShowQrcode(item.ssr)">
+                                                    <el-button size="mini" @click="onShowQrcode(item.url)">
                                                         <!----><!----><span>码</span>
                                                     </el-button>
-                                                    <el-button size="mini" v-clipboard:copy="item.ssr"
+                                                    <el-button size="mini" v-clipboard:copy="item.url"
                                                                v-clipboard:success="onSsrCopy">
                                                         <!----><!----><span>SSR</span>
                                                     </el-button>
