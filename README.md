@@ -1,5 +1,5 @@
 # ssrWeb
- 
+
 ## Project setup
 ```
 npm install
